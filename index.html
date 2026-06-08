@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Mohsin Prompt Lab</title>
+
+<!-- Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+
+  body {
+    background: #070b14;
+    color: white;
+    overflow-x: hidden;
+  }
+
+  /* Neon Animated Background */
+  body::before {
+    content: "";
+    position: fixed;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(0,140,255,0.15), transparent 40%),
+                radial-gradient(circle, rgba(0,255,200,0.08), transparent 40%);
+    animation: glowMove 12s linear infinite;
+    z-index: -1;
+  }
+
+  @keyframes glowMove {
+    0% { transform: translate(0,0); }
+    50% { transform: translate(120px, 60px); }
+    100% { transform: translate(0,0); }
+  }
+
+  /* HERO */
+  .hero {
+    text-align: center;
+    padding: 90px 20px 40px;
+  }
+
+  .hero h1 {
+    font-size: 44px;
+    color: #4da3ff;
+    text-shadow: 0 0 20px #4da3ff;
+    animation: glowText 2s infinite alternate;
+  }
+
+  @keyframes glowText {
+    from { text-shadow: 0 0 10px #4da3ff; }
+    to { text-shadow: 0 0 25px #00ffe5; }
+  }
+
+  .hero p {
+    margin-top: 15px;
+    color: #b9c6ff;
+    font-size: 15px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* BUTTON */
+  .btn {
+    margin-top: 25px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 18px;
+    background: #1877f2;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+
+  .btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #1877f2;
+  }
+
+  /* Container */
+  .container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+  }
+
+  h2 {
+    margin-top: 40px;
+    color: #4da3ff;
+    text-shadow: 0 0 10px #4da3ff;
+  }
+
+  .box {
+    background: rgba(255,255,255,0.05);
+    padding: 20px;
+    margin-top: 15px;
+    border-radius: 12px;
+    border: 1px solid rgba(77,163,255,0.2);
+    backdrop-filter: blur(10px);
+  }
+
+  /* Facebook Highlight Card */
+  .social-card {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 18px;
+    margin: 25px auto;
+    max-width: 500px;
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(77,163,255,0.2);
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    transition: 0.3s;
+  }
+
+  .social-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 25px rgba(0,140,255,0.3);
+  }
+
+  .social-card i {
+    font-size: 30px;
+    color: #1877f2;
+  }
+
+  .social-card h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #4da3ff;
+  }
+
+  .social-card p {
+    font-size: 13px;
+    color: #b9c6ff;
+  }
+
+  .social-card a {
+    display: inline-block;
+    margin-top: 6px;
+    font-size: 13px;
+    color: #00ffe5;
+    text-decoration: none;
+  }
+
+  footer {
+    text-align: center;
+    padding: 20px;
+    color: #aaa;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    margin-top: 40px;
+  }
+
+  /* Mobile */
+  @media (max-width: 600px) {
+    .hero h1 {
+      font-size: 28px;
+    }
+
+    .social-card {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<div class="hero">
+  <h1>🤖 Mohsin Prompt Lab</h1>
+  <p>AI Prompts • ChatGPT Tips • Automation • Prompt Engineering • Digital Innovation</p>
+
+  <a class="btn" href="javascript:void(0)">
+    <i class="fab fa-facebook"></i> Explore Community
+  </a>
+</div>
+
+<div class="container">
+
+  <!-- FACEBOOK HIGHLIGHT -->
+  <div class="social-card">
+    <i class="fab fa-facebook"></i>
+    <div>
+      <h3>Facebook Community</h3>
+      <p>Follow Mohsin Prompt Lab for AI prompts, ChatGPT tips & automation ideas</p>
+      <a href="javascript:void(0)">Visit Page →</a>
+    </div>
+  </div>
+
+  <!-- PRIVACY -->
+  <h2>🔒 Privacy Policy</h2>
+  <div class="box">
+    <p>We respect your privacy and protect any information you share.</p>
+    <p>We may collect basic engagement data to improve content.</p>
+    <p>We do not sell or share your personal data.</p>
+    <p>By using this page, you agree to this policy.</p>
+  </div>
+
+  <!-- IMPRESSUM -->
+  <h2>⚖️ Impressum</h2>
+  <div class="box">
+    <p><b>Owner:</b> Mohsin Mughal</p>
+    <p><b>Address:</b> Pakistan</p>
+    <p><b>Contact:</b> Facebook Inbox</p>
+    <p><b>Content:</b> AI Prompts & Educational Material</p>
+    <p><b>Disclaimer:</b> For educational use only.</p>
+  </div>
+
+</div>
+
+<footer>
+  ⭐ Powered by AI • Built with Mohsin Prompt Lab
+</footer>
+
+</body>
+</html>
