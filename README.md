@@ -54,4 +54,4 @@ Building a global AI prompt community where creators, students, and developers c
 
 ---
 
-⭐ Powered by AI • Built with ## Mohsin Prompt Lab
+⭐ Powered by AI • Built with **Mohsin Prompt Lab**
