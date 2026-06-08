@@ -40,7 +40,7 @@ This project includes:
 
 ## 👤 Owner
 **Mohsin Mughal**  
-Mohsin Prompt Lab
+Page: [Mohsin Prompt Lab](https://www.facebook.com/profile.php?id=61590718529493)
 
 ---
 
